@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap"
+    />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Welcome to <span class="rainbow-text">Brillate's</span> Website</h1>
+      <p>This is a sample paragraph on my website.</p>
+    </header>
+    <nav>
+      <ul>
+        <li><a href="#section1">Gamer</a></li>
+        <li><a href="#section2">Video Editor</a></li>
+        <li><a href="#section3">Content Creator</a></li>
+      </ul>
+    </nav>
+    <main>
+      <section class="section" id="section1" data-aos="flip-down">
+        <h2>Gamer</h2>
+        <div class="content">
+          <p>My gaming history content goes here.</p>
+          <!-- You can add graphics or images here -->
+        </div>
+      </section>
+      <section class="section" id="section2" data-aos="flip-down">
+        <h2>Video Editor</h2>
+        <div class="content">
+          <p>My video editing content goes here.</p>
+          <!-- You can add graphics or images here -->
+        </div>
+      </section>
+      <section class="section" id="section3" data-aos="flip-down">
+        <h2>Content Creator</h2>
+        <div class="content">
+          <p>My content creation content goes here.</p>
+          <!-- You can add graphics or images here -->
+        </div>
+      </section>
+      <!-- Add more sections as needed -->
+    </main>
+    <hr class="divider" />
+    <div class="button-container">
+      <div
+        class="g-ytsubscribe"
+        data-channelid="UC7lo3krByKRe-D8eXlPzC0g"
+        data-layout="full"
+        data-theme="dark"
+        data-count="default"
+      ></div>
+      <a
+        class="twitch-button"
+        href="https://www.twitch.tv/yourtwitchchannel"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        Twitch Channel
+      </a>
+    </div>
+    <script src="https://apis.google.com/js/platform.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+
+      // You can also pass an optional settings object
+      // below listed default settings
+      AOS.init({
+        // Global settings:
+        disable: false, // accepts following values: 'phone', 'tablet', 'mobile', boolean, expression or function
+        startEvent: "DOMContentLoaded", // name of the event dispatched on the document, that AOS should initialize on
+        initClassName: "aos-init", // class applied after initialization
+        animatedClassName: "aos-animate", // class applied on animation
+        useClassNames: false, // if true, will add content of `data-aos` as classes on scroll
+        disableMutationObserver: false, // disables automatic mutations' detections (advanced)
+        debounceDelay: 50, // the delay on debounce used while resizing window (advanced)
+        throttleDelay: 99, // the delay on throttle used while scrolling the page (advanced)
+
+        // Settings that can be overridden on per-element basis, by `data-aos-*` attributes:
+        offset: 120, // offset (in px) from the original trigger point
+        delay: 0, // values from 0 to 3000, with step 50ms
+        duration: 2000, // values from 0 to 3000, with step 50ms
+        easing: "ease", // default easing for AOS animations
+        once: false, // whether animation should happen only once - while scrolling down
+        mirror: true, // whether elements should animate out while scrolling past them
+        anchorPlacement: "top-bottom", // defines which position of the element regarding to window should trigger the animation
+      });
+    </script>
+    <!-- Code injected by live-server -->
+    <script>
+      // <![CDATA[  <-- For SVG support
+      if ("WebSocket" in window) {
+        (function () {
+          function refreshCSS() {
+            var sheets = [].slice.call(document.getElementsByTagName("link"));
+            var head = document.getElementsByTagName("head")[0];
+            for (var i = 0; i < sheets.length; ++i) {
+              var elem = sheets[i];
+              var parent = elem.parentElement || head;
+              parent.removeChild(elem);
+              var rel = elem.rel;
+              if (
+                (elem.href && typeof rel != "string") ||
+                rel.length == 0 ||
+                rel.toLowerCase() == "stylesheet"
+              ) {
+                var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, "");
+                elem.href =
+                  url +
+                  (url.indexOf("?") >= 0 ? "&" : "?") +
+                  "_cacheOverride=" +
+                  new Date().valueOf();
+              }
+              parent.appendChild(elem);
+            }
+          }
+          var protocol =
+            window.location.protocol === "http:" ? "ws://" : "wss://";
+          var address =
+            protocol + window.location.host + window.location.pathname + "/ws";
+          var socket = new WebSocket(address);
+          socket.onmessage = function (msg) {
+            if (msg.data == "reload") window.location.reload();
+            else if (msg.data == "refreshcss") refreshCSS();
+          };
+          if (
+            sessionStorage &&
+            !sessionStorage.getItem("IsThisFirstTime_Log_From_LiveServer")
+          ) {
+            console.log("Live reload enabled.");
+            sessionStorage.setItem("IsThisFirstTime_Log_From_LiveServer", true);
+          }
+        })();
+      } else {
+        console.error(
+          "Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading."
+        );
+      }
+      // ]]>
+    </script>
+  </body>
+</html>

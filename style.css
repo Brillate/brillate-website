@@ -1,0 +1,151 @@
+/* Style for the Twitch button */
+.twitch-button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #6441a5;
+  color: #ffffff;
+  font-size: 16px;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+  margin-left: 20px;
+}
+
+.twitch-button:hover {
+  background-color: #452c70; /* Darker shade on hover */
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  text-align: center;
+  background: linear-gradient(90deg, #000 0%, #00f 50%, #fff 100%);
+  background-size: 200% 100%;
+  font-size: 16px;
+}
+
+.section {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  transition: transform 0.5s ease-in-out;
+}
+h1 {
+  font-size: 100px;
+  position: relative;
+  color: white;
+}
+h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+  color: white;
+}
+.content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+#section1 {
+  background-color: darksalmon; /* Example background color */
+}
+
+#section2 {
+  background-color: #2196f3; /* Example background color */
+}
+
+#section3 {
+  background-color: #4caf50; /* Example background color */
+}
+
+header {
+  text-align: center;
+  padding: 100px 0;
+}
+
+nav ul {
+  /* Navigation bar button positions */
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  background-color: #222;
+}
+
+nav a {
+  /* Navigation bar */
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  padding: 10px 20px;
+  border: 1px solid transparent;
+  transition: color 0.3s, border-color 0.3s;
+  border-radius: 5px;
+  background-color: #444;
+}
+
+nav li {
+  /* Navigation bar spacing */
+  margin: 0 20px;
+}
+
+nav a:hover {
+  color: #f06; /* Color on hover */
+  border-color: #f06; /* Border color on hover */
+}
+
+/* main {
+  background-color: #f0f0f0;
+  padding: 20px;
+} */
+
+.section {
+  background-color: #f0f0f0;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Make text black within sections */
+.content h2,
+.content p {
+  color: #000; /* Set the text color to black */
+}
+
+@keyframes fadeInTitle {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+*/ .rainbow-text {
+  background: linear-gradient(45deg, #f06, #f90, #f30, #9f0, #0ff, #f0f, #f06);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline;
+}
+
+p {
+  /* opacity: 0; */
+  color: #eee;
+  /* animation-name: fadeInBody; */
+  /* animation-duration: 2s; */
+  /* animation-delay: 1.5s; */
+  /*animation-fill-mode: forwards; */
+}
+
+/* @keyframes fadeInBody {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+} */
+
+.divider {
+  margin: 50px 0px;
+}
